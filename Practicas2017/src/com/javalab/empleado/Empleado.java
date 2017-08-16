@@ -51,4 +51,12 @@ public class Empleado {
 		return "Empleado: " + this.getNombre();
 	}
 	
+	public void calcularSueldoActual() {
+		if (this.getAntiguedad() < 5) {
+			this.setSueldoActual(this.getSueldoBase() * 1.5);
+		} else {
+			this.setSueldoActual(this.getSueldoBase() * 3);
+		}
+	}
+	
 }
